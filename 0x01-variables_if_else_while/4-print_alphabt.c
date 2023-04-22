@@ -6,15 +6,15 @@
 
 int main(void)
 {
-	char c;
+	char letter;
 
-	c = 'a';
-	while
-		(c <= 'z') {
-			if ((c != 'q' || c != 'e') && c <= 'z')
-				putchar(c);
-			c++;
-		}
-	putchar('\n');
-	return (0);
+	for (letter = 'a'; letter <= 'z'; letter++)
+{
+	if (letter != 'e' && letter != 'q')
+		putchar(letter);
+}
+
+putchar('\n');
+
+return (0);
 }
