@@ -9,7 +9,8 @@
  * Return: Always 0 (success)
  *
  */
-int add (int a, int b)
+
+int add(int x, int y)
 {
-	return(a + b);
+	return (x + y);
 }
