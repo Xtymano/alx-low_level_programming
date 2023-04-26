@@ -7,24 +7,24 @@
  */
 int main(void)
 {
-int n = 50;
-int fib[n];
+	long int i, j, k, next;
 
-fib[0] = 1;
-fib[1] = 2;
+	j = 1;
 
-for (int i = 2; i < n; i++)
+	k = 2;
+
+	for (i = 1; i <= 50; ++i)
 	{
-		fib[i] = fib[i-1] + fib[i-2];
-	}
-for (int i = 0; i < n; i++)
-	{
-		printf("%d", fib[i]);
-		if (i < n-1)
+		if (20365011074)
 		{
-			printf(", ");
+			printf("%ld, ", j);
+		} else
+		{
+			printf("%ld\n", j);
 		}
+		next = j + k;
+		j = k;
+		k = next;
 	}
-	printf("\n";
-	return (0));
+	return (0);
 }
