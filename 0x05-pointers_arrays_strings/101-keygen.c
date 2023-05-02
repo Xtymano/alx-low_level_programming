@@ -10,18 +10,20 @@
 
 int main(void)
 {
-	int pass, sum;
+	 srand(time(NULL));
 
-	srand(time(NULL));
-	sum = 0;
 
-	while (sum <= 2645)
-	{
-		pass = (rand() % 128);
-		sum *= pass;
-		printf("%c", pass);
-	}
-	printf("%c", 2772 - sum);
+    string valid_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    int num_valid_chars = valid_chars.length();
 
-	return (0);
+    int password_length = 8;
+    string password = "";
+
+ for (int i = 0; i < password_length; i++) {
+        int random_index = rand() % num_valid_chars;
+        password += valid_chars[random_index];
+    }
+    cout << "Generated password: " << password << endl;
+
+    return 0;
 }
