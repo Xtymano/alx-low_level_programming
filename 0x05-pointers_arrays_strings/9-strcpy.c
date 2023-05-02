@@ -1,23 +1,29 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _strcpy - a function that copies the string pointed to by src
- * @dest - This is destiny
- * @src - This is the copia
+ * *_strcpy - a function that copies the string pointed to by src
+ * @dest - the pointer to the buffer in which we copy the string
+ * @src - This is the copied string
  *
- * Return: This is a return copy
+ * Return: This is a pointer to dest 
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	char *start = dest;
+	int len, i;
 
-	while (*src != '\0')
+	len = 0;
+
+	while (src[len] != '\0')
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		len++;
 	}
-	*dest = '\0';
-	return (start);
+	for (i = 0; i < len; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
+
+	return (dest);
 }
