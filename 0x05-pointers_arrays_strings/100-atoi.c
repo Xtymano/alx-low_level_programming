@@ -9,7 +9,7 @@
 
 int _atoi(char *s)
 {
-	int sign
+	int sign;
 	unsigned int num;
 	char *temp;
 
