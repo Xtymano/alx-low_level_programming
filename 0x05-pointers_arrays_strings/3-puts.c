@@ -12,7 +12,7 @@ void _puts(char *str)
 
 	for (middle = 0; str[middle] != '\0'; middle++)
 	{
-		_putchar(str[index]);
+		_putchar(str[middle]);
 	}
 	_putchar('\n');
 }
