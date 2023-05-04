@@ -6,19 +6,18 @@
  * @n: size of array.
  * Return: reversed array.
  */
-
 void reverse_array(int *a, int n)
 {
-	int change, start, stop;
+	int swap, begin, end;
 
-	start = 0;
-	stop = n - 1;
-	while (start < stop)
+	begin = 0;
+	end = n - 1;
+	while (begin < end)
 	{
-		change = *(a + start);
-		*(a + start) = *(a + stop);
-		*(a + stop) = change;
-		satrt++;
-		stop--;
+		swap = *(a + begin);
+		*(a + begin) = *(a + end);
+		*(a + end) = swap;
+		begin++;
+		end--;
 	}
 }
