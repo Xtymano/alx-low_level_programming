@@ -6,6 +6,7 @@
  * @n: size of array.
  * Return: reversed array.
  */
+
 void reverse_array(int *a, int n)
 {
 	int change, start, stop;
