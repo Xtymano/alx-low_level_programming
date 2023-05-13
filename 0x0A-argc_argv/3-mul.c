@@ -8,7 +8,8 @@
  * Return: the int converted from the string
  */
 
-int_atoi(char *s)
+int _atoi(char *s)
+
 {
 	int i, j, k, len, f, digit;
 
@@ -41,7 +42,7 @@ int_atoi(char *s)
 
 				digit = -digit;
 
-			n = n * 10 + digit;
+			j = j * 10 + digit;
 
 			f = 1;
 
@@ -58,7 +59,7 @@ int_atoi(char *s)
 
 		return (0);
 
-	return (n);
+	return (k);
 }
 
 /**
@@ -73,7 +74,7 @@ int main(int argc, char *argv[])
 {
 	int result, num1, num2;
 
-	if (arg < 3 || argc > 3)
+	if (argc < 3 || argc > 3)
 	{
 		printf("Error\n");
 
@@ -81,7 +82,7 @@ int main(int argc, char *argv[])
 	}
 	num1 = _atoi(argv[1]);
 
-	num2 = _atoi(arg[2]);
+	num2 = _atoi(argv[2]);
 
 	result = num1 * num2;
 
