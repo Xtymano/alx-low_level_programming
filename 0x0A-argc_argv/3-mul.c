@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - a program that multiplies two numbers
+ * _atoi - converts a string to
  * @s: string to be converted
  *
  * Return: the int converted from the string
