@@ -4,10 +4,11 @@
 
 /**
  *struct listint_s - singly linked liston
- *on: integer
+ *@n: integer
+ *@next:points to the next node
  *
  * Description: points to the next node
- * for Project
+ * for my Project
  */
 typedef struct listint_s
 {
